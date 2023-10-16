@@ -6,7 +6,18 @@
       <boolProp name="TestPlan.tearDown_on_shutdown">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-        <collectionProp name="Arguments.arguments"/>
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="pan" elementType="Argument">
+            <stringProp name="Argument.name">pan</stringProp>
+            <stringProp name="Argument.value">ABIPZ7000M</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dob" elementType="Argument">
+            <stringProp name="Argument.name">dob</stringProp>
+            <stringProp name="Argument.value">1978-05-30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
       </elementProp>
     </TestPlan>
     <hashTree>
@@ -150,7 +161,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;number&quot;:${PhoneNumber},&quot;dob&quot;:&quot;1978-05-30&quot;,&quot;pan&quot;:&quot;ABIPZ7000M&quot;,&quot;lg_code&quot;:&quot;ABCD123&quot;,&quot;lg_name&quot;:&quot;Vishal&quot;,&quot;promo_code&quot;:null,&quot;type&quot;:&quot;S&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;number&quot;:${PhoneNumber},&quot;dob&quot;:&quot;${dob}&quot;,&quot;pan&quot;:&quot;${pan}&quot;,&quot;lg_code&quot;:&quot;ABCD123&quot;,&quot;lg_name&quot;:&quot;Vishal&quot;,&quot;promo_code&quot;:null,&quot;type&quot;:&quot;S&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
